@@ -105,11 +105,6 @@ public class ListActivity extends AppCompatActivity {
         super.onPause();
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        MediaHelp.getInstance().seekTo(data.getIntExtra("position", 0));
-    }
 
     Handler mHandler = new Handler() {
         @Override
@@ -123,4 +118,11 @@ public class ListActivity extends AppCompatActivity {
             }
         }
     };
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        MediaHelp.getInstance().seekTo(data.getIntExtra("position", 0));
+    }
+
 }

@@ -117,7 +117,10 @@ public class VideoAdapter extends BaseAdapter<VideoModel> implements View.OnClic
 
             @Override
             public void onSwitchPageType() {
+                Log.e(TAG, "onSwitchPageType: " +mAct.getRequestedOrientation());
                 if (mAct.getRequestedOrientation() == ActivityInfo.SCREEN_ORIENTATION_PORTRAIT) {
+                    Log.e(TAG, "onSwitchPageType 666: " );
+
                     Intent intent = new Intent(new Intent(mAct,
                             FullVideoActivity.class));
                     intent.putExtra("url", viewModel.getUrl());
