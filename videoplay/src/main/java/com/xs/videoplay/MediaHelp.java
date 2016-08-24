@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 
 public class MediaHelp {
 	private static MediaPlayer mPlayer;
+	private MediaHelp(){}
 
 	public static MediaPlayer getInstance() {
 		if (mPlayer == null) {

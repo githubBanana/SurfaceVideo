@@ -122,7 +122,8 @@ public class ListActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        MediaHelp.getInstance().seekTo(data.getIntExtra("position", 0));
+        if (requestCode == 1)
+            MediaHelp.getInstance().seekTo(data.getIntExtra("position", 0));
     }
 
 }

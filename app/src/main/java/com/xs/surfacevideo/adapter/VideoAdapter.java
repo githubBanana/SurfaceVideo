@@ -123,9 +123,10 @@ public class VideoAdapter extends BaseAdapter<VideoModel> implements View.OnClic
 
                     Intent intent = new Intent(new Intent(mAct,
                             FullVideoActivity.class));
-                    intent.putExtra("url", viewModel.getUrl());
-                    intent.putExtra("position", position);
-                    mAct.startActivityForResult(intent, 1);
+                    Intent intent1 = new Intent(mAct,FullVideoActivity.class);
+                    intent1.putExtra("url", viewModel.getUrl());
+                    intent1.putExtra("position", position);
+                    mAct.startActivityForResult(intent1, 1);
                 }
             }
 

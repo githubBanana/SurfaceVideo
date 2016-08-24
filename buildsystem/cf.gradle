@@ -12,11 +12,11 @@ ext {
     ]
 
     //Libraries variable
-    supportv4_Version       = '24.1.1'
-    appcompatv7_Version     = '24.1.1'
-    design_Version          = '24.1.1'
-    recyclerview_Version    = '24.1.1'
-    cardview_Version        = '24.1.1'
+    supportv4_Version       = '24.2.0'
+    appcompatv7_Version     = '24.2.0'
+    design_Version          = '24.2.0'
+    recyclerview_Version    = '24.2.0'
+    cardview_Version        = '24.2.0'
     rxjava_Version          = '1.1.9'
     rxandroid_Version       = '1.2.1'
     retrofit_Version        = '2.1.0'
