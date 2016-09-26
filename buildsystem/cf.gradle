@@ -4,7 +4,7 @@ ext {
     android = [
             compileSdkVersion : 24,
             buildToolsVersion : "24.0.0",
-            applicationId     : "com.xs.mvvmtest",
+            applicationId     : "com.xs.surfacevideo",
             minSdkVersion     : 14,
             targetSdkVersion  : 22,
             versionCode       : 1,

@@ -11,6 +11,7 @@ import android.media.MediaPlayer.OnCompletionListener;
 import android.media.MediaPlayer.OnErrorListener;
 import android.media.MediaPlayer.OnInfoListener;
 import android.media.MediaPlayer.OnPreparedListener;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
@@ -236,7 +237,6 @@ public class VideoSuperPlayer extends RelativeLayout implements
 		}
 		mSuperVideoView.setVisibility(GONE);
 	}
-
 	public VideoSuperPlayer(Context context) {
 		super(context);
 		initView(context);
@@ -320,6 +320,9 @@ public class VideoSuperPlayer extends RelativeLayout implements
 			mPlayer.setSurface(mSurface);
 			mPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
 			mPlayer.setScreenOnWhilePlaying(true);
+			Uri uri = Uri.parse(url);
+			Log.e("info", "play: "+url );
+//			mPlayer.setDataSource(mContext,uri);
 			mPlayer.setDataSource(url);
 			mPlayer.prepareAsync();
 		} catch (Exception e) {

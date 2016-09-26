@@ -65,7 +65,9 @@ public class ListActivity extends AppCompatActivity {
         List<VideoModel> modelList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             VideoModel model = new VideoModel();
-            model.setUrl("http://112.253.22.157/17/z/z/y/u/zzyuasjwufnqerzvyxgkuigrkcatxr/hc.yinyuetai.com/D046015255134077DDB3ACA0D7E68D45.flv");
+//            model.setUrl("/storage/emulated/0/222.mp4");
+//            model.setUrl("http://112.253.22.157/17/z/z/y/u/zzyuasjwufnqerzvyxgkuigrkcatxr/hc.yinyuetai.com/D046015255134077DDB3ACA0D7E68D45.flv");
+            model.setUrl("/storage/emulated/0/Android/data/com.xs.utilsbagapp/cache/baby.mp4");
             modelList.add(model);
         }
         return modelList;
